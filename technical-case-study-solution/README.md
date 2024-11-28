@@ -104,8 +104,7 @@ python output_check.py
 ```
 
 ### Other 
-### We can use libraries like flake8 and black for code linting (checking code for errors, style violations, and formatiing issues)
-### .flake8 file for customizations like max-line-length = 120
+### We can use libraries like flake8 and black for code linting (checking code for errors, style violations, and formatiing issues) .flake8 file for customizations like max-line-length = 120
 ```bash
 flake8 input_check.py
 flake8 main.py
@@ -126,11 +125,9 @@ black local_material_s2.py
 black process_order_s1.py
 black process_order_s2.py
 ```
-### (OPTIONAL) automatically fix issues whenever commit code
-### every time when commiting flake8 and black will automatically run and fix issues before they’re committed to a repository.
+### (OPTIONAL) automatically fix issues whenever commit code every time when commiting flake8 and black will automatically run and fix issues before they’re committed to a repository.
 
-### Set up a .pre-commit-config.yaml file in our project 
-### then install and run pre-commit
+### Set up a .pre-commit-config.yaml file in our project then install and run pre-commit
 ```bash
 pip install pre-commit
 pre-commit install
