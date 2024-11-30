@@ -301,12 +301,6 @@ def post_prep_local_material(df):
     # ○  Assign global_mtl_id from MATNR or global material number, as appropriate
     df = df.withColumn("global_mtl_id", F.coalesce("MATNR", "global_material_number"))
 
-    # ▪ Primary Key (primary_key_intra): Concatenate MATNR and WERKS.
-    # df = df.withColumn("primary_key_intra", F.concat_ws("-", "MATNR", "WERKS"))
-
-    # ▪ Primary Key (primary_key_inter): Concatenate SOURCE_SYSTEM_ERP, MATNR, and WERKS.
-    # df = df.withColumn("primary_key_inter", F.concat_ws("-", "SOURCE_SYSTEM_ERP", "MATNR", "WERKS"))
-
     #  Use the derive_intra_and_inter_primary_key utility function to generate primary keys
     df = derive_intra_and_inter_primary_key(df)
 
@@ -337,19 +331,4 @@ def write_output(df_join, output_path):
     """
     # ● Write the final local_material DataFrame to the designated output path.
     df_join.write.mode("overwrite").parquet(output_path)
-    print(f"Data were written to {output_path}")
-
-
-def write_outputcsv(df_join, output_path):
-    """
-    9. Write the Output DataFrame
-
-    Arguments:
-    df_join - df with processed data
-    output_path - path to save the output
-
-    Output:
-    A df with the processed data
-    """
-    df_join.write.mode("overwrite").csv(output_path, header=True)
     print(f"Data were written to {output_path}")

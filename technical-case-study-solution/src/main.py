@@ -1,4 +1,3 @@
-import pyspark
 from pyspark.sql import SparkSession
 
 from local_material_s1 import (
@@ -10,8 +9,7 @@ from local_material_s1 import (
     prep_company_codes,
     integration_local_material,
     post_prep_local_material,
-    write_output,
-    write_outputcsv
+    write_output
 )
 
 from local_material_s2 import (
@@ -77,7 +75,9 @@ Detailed instructions see attached PDF
 
 
 def read_csv_file(file_directory: str):
-    # Initialize Spark session
+    """
+    Initialize Spark session and read csv using spark 
+    """
     spark = SparkSession.builder \
         .appName("technical-case-study-solution") \
         .getOrCreate()
@@ -86,10 +86,10 @@ def read_csv_file(file_directory: str):
     return df
 
 
-def process_local_material_data(system):
+def process_local_material_data(system: str):
     """
     Process local material data for a specific system.
-    Arguments: system (str) - The system (system 1 or system 2)
+    Arguments: system (str) - The system (system 1 or 2)
     """
     # Paths
     # System 1
@@ -134,10 +134,8 @@ def process_local_material_data(system):
         processed_data = post_prep_local_material(integrated_data)
         # Specify the output path where the data will be saved
         output_path = "output/local_material_data_s1.parquet"
-        output_path_csv = "output/local_material_data_s1.csv"
         write_output(processed_data, output_path)
-        write_outputcsv(processed_data, output_path_csv)
-
+        
     elif system == "system_2":
         # Pre-process the data using functions from local_material_s2.py
         col_mara_global_material_number = 'ZZMDGM'  # This can vary by system  no ZZA_TEXT4 in system 1 or system 2
@@ -157,7 +155,7 @@ def process_local_material_data(system):
         write_output_s2(processed_data, output_path)
 
 
-def process_order_data(system):
+def process_order_data(system: str):
     """
     Process order data for system 1 or system 2
     Arguments: system (str) - The system (system 1 or system 2)
@@ -213,10 +211,10 @@ def process_order_data(system):
 
 def main():
     """
-    Run the process_local_material_data function to start the data processing
+    Run the process_local_material_data and process_order_data functions to start the data processing
     """
-    # process_local_material_data("system_1")
-    # process_local_material_data("system_2")
+    process_local_material_data("system_1")
+    process_local_material_data("system_2")
     process_order_data("system_1")
     process_order_data("system_2")
 
