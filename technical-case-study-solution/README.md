@@ -18,7 +18,7 @@ The exercise involves:
 
 **Technical-Case-Study.pdf** explains everything in detail about what we need to do the exercise.
 
-![Technical Case Study](technical-case-study-solution/technical-case-study.drawio.png)
+![Technical Case Study](/technical-case-study.drawio.png)
 
 ---
 
