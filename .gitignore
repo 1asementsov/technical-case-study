@@ -4,3 +4,5 @@ file_to_save_key
 _MACOSX/
 technical-case-study-solution/env/
 src/__pycache__/
+__MACOSX/
+technical-case-study/

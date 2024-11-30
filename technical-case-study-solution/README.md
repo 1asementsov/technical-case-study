@@ -18,6 +18,8 @@ The exercise involves:
 
 **Technical-Case-Study.pdf** explains everything in detail about what we need to do the exercise.
 
+**Technical Case Study Diagram** an architecture diagram that shows how different SAP tables and datasets are connected in the solution.
+
 ![Technical Case Study](./technical-case-study.drawio.png)
 
 ---
