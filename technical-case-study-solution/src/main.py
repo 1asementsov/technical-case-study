@@ -94,21 +94,21 @@ def process_local_material_data(system):
     # Paths
     # System 1
     if system == "system_1":
-        file_mara = '../data/system_1/PRE_MARA.csv'
-        file_mbew = '../data/system_1/PRE_MBEW.csv'
-        file_marc = '../data/system_1/PRE_MARC.csv'
-        file_t001k = '../data/system_1/PRE_T001K.csv'
-        file_t001w = '../data/system_1/PRE_T001W.csv'
-        file_t001 = '../data/system_1/PRE_T001.csv'
+        file_mara = 'data/system_1/PRE_MARA.csv'
+        file_mbew = 'data/system_1/PRE_MBEW.csv'
+        file_marc = 'data/system_1/PRE_MARC.csv'
+        file_t001k = 'data/system_1/PRE_T001K.csv'
+        file_t001w = 'data/system_1/PRE_T001W.csv'
+        file_t001 = 'data/system_1/PRE_T001.csv'
 
     # System 2
     elif system == "system_2":
-        file_mara = '../data/system_2/PRD_MARA.csv'
-        file_mbew = '../data/system_2/PRD_MBEW.csv'
-        file_marc = '../data/system_2/PRD_MARC.csv'
-        file_t001k = '../data/system_2/PRD_T001K.csv'
-        file_t001w = '../data/system_2/PRD_T001W.csv'
-        file_t001 = '../data/system_2/PRD_T001.csv'
+        file_mara = 'data/system_2/PRD_MARA.csv'
+        file_mbew = 'data/system_2/PRD_MBEW.csv'
+        file_marc = 'data/system_2/PRD_MARC.csv'
+        file_t001k = 'data/system_2/PRD_T001K.csv'
+        file_t001w = 'data/system_2/PRD_T001W.csv'
+        file_t001 = 'data/system_2/PRD_T001.csv'
 
     # Read CSV
     sap_mara = read_csv_file(file_mara)
@@ -165,15 +165,15 @@ def process_order_data(system):
     # Paths
     # System 1
     if system == "system_1":
-        file_afko = '../data/system_1/PRE_AFKO.csv'
-        file_afpo = '../data/system_1/PRE_AFPO.csv'
-        file_aufk = '../data/system_1/PRE_AUFK.csv'
-        file_mara = '../data/system_1/PRE_MARA.csv'
+        file_afko = 'data/system_1/PRE_AFKO.csv'
+        file_afpo = 'data/system_1/PRE_AFPO.csv'
+        file_aufk = 'data/system_1/PRE_AUFK.csv'
+        file_mara = 'data/system_1/PRE_MARA.csv'
     elif system == "system_2":
-        file_afko = '../data/system_2/PRD_AFKO.csv'
-        file_afpo = '../data/system_2/PRD_AFPO.csv'
-        file_aufk = '../data/system_2/PRD_AUFK.csv'
-        file_mara = '../data/system_2/PRD_MARA.csv'
+        file_afko = 'data/system_2/PRD_AFKO.csv'
+        file_afpo = 'data/system_2/PRD_AFPO.csv'
+        file_aufk = 'data/system_2/PRD_AUFK.csv'
+        file_mara = 'data/system_2/PRD_MARA.csv'
 
     # Read CSV
     sap_afko = read_csv_file(file_afko)
