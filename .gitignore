@@ -1,3 +1,6 @@
 env/
 keys/
 file_to_save_key
+_MACOSX/
+technical-case-study-solution/env/
+src/__pycache__/
