@@ -1,6 +1,6 @@
-2024-12-01 08:26:40,001 - Exploring data for local_material_data system 1...
-2024-12-01 08:26:40,002 - First 5 rows of the dataset local_material_data system 1:
-2024-12-01 08:26:40,016 -                                                MANDT  ... no_of_duplicates
+2024-12-01 14:00:29,465 - Exploring data for local_material_data system 1...
+2024-12-01 14:00:29,466 - First 5 rows of the dataset local_material_data system 1:
+2024-12-01 14:00:29,494 -                                                MANDT  ... no_of_duplicates
 0  ad57366865126e55649ecb23ae1d48887544976efea46a...  ...                1
 1  ad57366865126e55649ecb23ae1d48887544976efea46a...  ...                1
 2  ad57366865126e55649ecb23ae1d48887544976efea46a...  ...                1
@@ -8,9 +8,9 @@
 4  ad57366865126e55649ecb23ae1d48887544976efea46a...  ...                1
 
 [5 rows x 20 columns]
-2024-12-01 08:26:40,018 - 
+2024-12-01 14:00:29,495 - 
 Summary statistics for local_material_data system 1:
-2024-12-01 08:26:40,027 -               VERPR        STPRS        PEINH  no_of_duplicates
+2024-12-01 14:00:29,509 -               VERPR        STPRS        PEINH  no_of_duplicates
 count     61.000000    61.000000    61.000000              61.0
 mean    1578.082066   554.345031   280.763039               1.0
 std     7910.137723  1157.422019   178.923428               0.0
@@ -19,12 +19,12 @@ min        6.691332    18.235695    25.496651               1.0
 50%      275.492109   246.605789   294.850026               1.0
 75%      426.879106   386.409952   408.951352               1.0
 max    61654.173075  6914.437676  1071.626347               1.0
-2024-12-01 08:26:40,027 - 
+2024-12-01 14:00:29,510 - 
 --------------------------------------------------
 
-2024-12-01 08:26:40,028 - Exploring data for local_material_data system 2...
-2024-12-01 08:26:40,029 - First 5 rows of the dataset local_material_data system 2:
-2024-12-01 08:26:40,046 -                                                MANDT  ... no_of_duplicates
+2024-12-01 14:00:29,511 - Exploring data for local_material_data system 2...
+2024-12-01 14:00:29,512 - First 5 rows of the dataset local_material_data system 2:
+2024-12-01 14:00:29,527 -                                                MANDT  ... no_of_duplicates
 0  ad57366865126e55649ecb23ae1d48887544976efea46a...  ...                1
 1  ad57366865126e55649ecb23ae1d48887544976efea46a...  ...                1
 2  ad57366865126e55649ecb23ae1d48887544976efea46a...  ...                1
@@ -32,9 +32,9 @@ max    61654.173075  6914.437676  1071.626347               1.0
 4  ad57366865126e55649ecb23ae1d48887544976efea46a...  ...                1
 
 [5 rows x 20 columns]
-2024-12-01 08:26:40,047 - 
+2024-12-01 14:00:29,528 - 
 Summary statistics for local_material_data system 2:
-2024-12-01 08:26:40,056 -              VERPR        STPRS        PEINH  no_of_duplicates
+2024-12-01 14:00:29,537 -              VERPR        STPRS        PEINH  no_of_duplicates
 count    13.000000    13.000000    13.000000              13.0
 mean   1486.898204  2305.693011   514.426735               1.0
 std    1811.139142  2594.808864   394.105429               0.0
@@ -43,12 +43,12 @@ min      70.438155   237.404193   188.362486               1.0
 50%     453.713982   572.248676   432.075068               1.0
 75%    2569.720923  4616.200060   538.798559               1.0
 max    4729.775034  7059.489910  1419.453628               1.0
-2024-12-01 08:26:40,057 - 
+2024-12-01 14:00:29,538 - 
 --------------------------------------------------
 
-2024-12-01 08:26:40,058 - Exploring data for process_order_data system 1...
-2024-12-01 08:26:40,058 - First 5 rows of the dataset process_order_data system 1:
-2024-12-01 08:26:40,095 -                                                MATNR  ... order_start_timestamp
+2024-12-01 14:00:29,538 - Exploring data for process_order_data system 1...
+2024-12-01 14:00:29,539 - First 5 rows of the dataset process_order_data system 1:
+2024-12-01 14:00:29,571 -                                                MATNR  ... order_start_timestamp
 0  590c5df14b93564b3822eeb4d5b6468ea992f92499c169...  ...            2013-07-17
 1  85b82c1df153d3366f650faf1974dd83092a5ff9259814...  ...            2013-05-21
 2  c216f4a709b45177d40da3228690f31f68a0e62fe3d0bc...  ...            2013-09-15
@@ -56,9 +56,9 @@ max    4729.775034  7059.489910  1419.453628               1.0
 4  c2bb3b34c7d0fafdfe81229c0834926066486aff6ffdc7...  ...            2015-04-02
 
 [5 rows x 44 columns]
-2024-12-01 08:26:40,096 - 
+2024-12-01 14:00:29,572 - 
 Summary statistics for process_order_data system 1:
-2024-12-01 08:26:40,113 -              NTGEW  ...          order_start_timestamp
+2024-12-01 14:00:29,589 -              NTGEW  ...          order_start_timestamp
 count  4690.000000  ...                           4303
 mean    334.994069  ...  2014-11-18 06:43:35.291656960
 min      20.234059  ...            1999-12-26 00:00:00
@@ -69,12 +69,12 @@ max     644.504808  ...            2020-09-16 00:00:00
 std     231.010993  ...                            NaN
 
 [8 rows x 5 columns]
-2024-12-01 08:26:40,113 - 
+2024-12-01 14:00:29,590 - 
 --------------------------------------------------
 
-2024-12-01 08:26:40,114 - Exploring data for process_order_data system 2...
-2024-12-01 08:26:40,115 - First 5 rows of the dataset process_order_data system 2:
-2024-12-01 08:26:40,139 -                                                MATNR  ... order_start_timestamp
+2024-12-01 14:00:29,591 - Exploring data for process_order_data system 2...
+2024-12-01 14:00:29,591 - First 5 rows of the dataset process_order_data system 2:
+2024-12-01 14:00:29,614 -                                                MATNR  ... order_start_timestamp
 0  908d2831d769fc7a24550e080ae2cb7b7ed6fbb4b65938...  ...                   NaT
 1  e54330537af86b38be9ccc391b60e583c9c69161259c9f...  ...                   NaT
 2  774fecb2b770a8c768ed5e18e45ccda9774da972068ade...  ...                   NaT
@@ -82,9 +82,9 @@ std     231.010993  ...                            NaN
 4  b0b99f39c1212ed23f94b59cb05fd0a17aec8801182e71...  ...                   NaT
 
 [5 rows x 44 columns]
-2024-12-01 08:26:40,140 - 
+2024-12-01 14:00:29,615 - 
 Summary statistics for process_order_data system 2:
-2024-12-01 08:26:40,154 -               NTGEW  on_time_flag  ...  order_finish_timestamp order_start_timestamp
+2024-12-01 14:00:29,630 -               NTGEW  on_time_flag  ...  order_finish_timestamp order_start_timestamp
 count      7.000000           0.0  ...                       5                     0
 mean    6448.235979           NaN  ...     2018-05-09 09:36:00                   NaT
 min      198.286301           NaN  ...     2008-06-14 00:00:00                   NaT
@@ -95,41 +95,41 @@ max    10687.298897           NaN  ...     2024-04-16 00:00:00                  
 std     4679.583445           NaN  ...                     NaN                   NaN
 
 [8 rows x 5 columns]
-2024-12-01 08:26:40,155 - 
+2024-12-01 14:00:29,631 - 
 --------------------------------------------------
 
-2024-12-01 08:26:40,156 - Checking primary key uniqueness for local_material_data system 1...
-2024-12-01 08:26:40,157 - Primary key 'primary_key_intra' in local_material_data system 1 is unique.
-2024-12-01 08:26:40,158 - 
+2024-12-01 14:00:29,632 - Checking primary key uniqueness for local_material_data system 1...
+2024-12-01 14:00:29,636 - Primary key 'primary_key_intra' in local_material_data system 1 is unique.
+2024-12-01 14:00:29,637 - 
 --------------------------------------------------
 
-2024-12-01 08:26:40,159 - Checking primary key uniqueness for local_material_data system 2...
-2024-12-01 08:26:40,160 - Primary key 'primary_key_intra' in local_material_data system 2 is unique.
-2024-12-01 08:26:40,160 - 
+2024-12-01 14:00:29,637 - Checking primary key uniqueness for local_material_data system 2...
+2024-12-01 14:00:29,638 - Primary key 'primary_key_intra' in local_material_data system 2 is unique.
+2024-12-01 14:00:29,639 - 
 --------------------------------------------------
 
-2024-12-01 08:26:40,161 - Checking primary key uniqueness for process_order_data system 1...
-2024-12-01 08:26:40,163 - Primary key 'primary_key_inter' in process_order_data system 1 is unique.
-2024-12-01 08:26:40,164 - 
+2024-12-01 14:00:29,640 - Checking primary key uniqueness for process_order_data system 1...
+2024-12-01 14:00:29,641 - Primary key 'primary_key_inter' in process_order_data system 1 is unique.
+2024-12-01 14:00:29,642 - 
 --------------------------------------------------
 
-2024-12-01 08:26:40,164 - Checking primary key uniqueness for process_order_data system 2...
-2024-12-01 08:26:40,165 - Primary key 'primary_key_inter' in process_order_data system 2 is unique.
-2024-12-01 08:26:40,166 - 
+2024-12-01 14:00:29,642 - Checking primary key uniqueness for process_order_data system 2...
+2024-12-01 14:00:29,642 - Primary key 'primary_key_inter' in process_order_data system 2 is unique.
+2024-12-01 14:00:29,643 - 
 --------------------------------------------------
 
-2024-12-01 08:26:40,166 - Checking for missing values in local_material_data system 1...
-2024-12-01 08:26:40,167 - No missing values in local_material_data system 1.
-2024-12-01 08:26:40,168 - 
+2024-12-01 14:00:29,643 - Checking for missing values in local_material_data system 1...
+2024-12-01 14:00:29,644 - No missing values in local_material_data system 1.
+2024-12-01 14:00:29,644 - 
 --------------------------------------------------
 
-2024-12-01 08:26:40,168 - Checking for missing values in local_material_data system 2...
-2024-12-01 08:26:40,169 - No missing values in local_material_data system 2.
-2024-12-01 08:26:40,169 - 
+2024-12-01 14:00:29,644 - Checking for missing values in local_material_data system 2...
+2024-12-01 14:00:29,645 - No missing values in local_material_data system 2.
+2024-12-01 14:00:29,646 - 
 --------------------------------------------------
 
-2024-12-01 08:26:40,169 - Checking for missing values in process_order_data system 1...
-2024-12-01 08:26:40,177 - Missing values in process_order_data system 1:
+2024-12-01 14:00:29,646 - Checking for missing values in process_order_data system 1...
+2024-12-01 14:00:29,652 - Missing values in process_order_data system 1:
 MATNR                          0
 AUFNR                          0
 SOURCE_SYSTEM_ERP              0
@@ -175,11 +175,11 @@ mto_vs_mts_flag                0
 order_finish_timestamp       386
 order_start_timestamp        387
 dtype: int64
-2024-12-01 08:26:40,177 - 
+2024-12-01 14:00:29,652 - 
 --------------------------------------------------
 
-2024-12-01 08:26:40,178 - Checking for missing values in process_order_data system 2...
-2024-12-01 08:26:40,179 - Missing values in process_order_data system 2:
+2024-12-01 14:00:29,652 - Checking for missing values in process_order_data system 2...
+2024-12-01 14:00:29,654 - Missing values in process_order_data system 2:
 MATNR                       0
 AUFNR                       0
 SOURCE_SYSTEM_ERP           0
@@ -225,48 +225,192 @@ mto_vs_mts_flag             0
 order_finish_timestamp      2
 order_start_timestamp       7
 dtype: int64
-2024-12-01 08:26:40,179 - 
+2024-12-01 14:00:29,655 - 
 --------------------------------------------------
 
-2024-12-01 08:26:40,180 - Checking for empty columns in local_material_data system 1...
-2024-12-01 08:26:40,181 - No empty columns in local_material_data system 1.
-2024-12-01 08:26:40,181 - 
+2024-12-01 14:00:29,655 - Checking for empty columns in local_material_data system 1...
+2024-12-01 14:00:29,657 - No empty columns in local_material_data system 1.
+2024-12-01 14:00:29,657 - 
 --------------------------------------------------
 
-2024-12-01 08:26:40,181 - Checking for empty columns in local_material_data system 2...
-2024-12-01 08:26:40,183 - No empty columns in local_material_data system 2.
-2024-12-01 08:26:40,183 - 
+2024-12-01 14:00:29,657 - Checking for empty columns in local_material_data system 2...
+2024-12-01 14:00:29,658 - No empty columns in local_material_data system 2.
+2024-12-01 14:00:29,658 - 
 --------------------------------------------------
 
-2024-12-01 08:26:40,184 - Checking for empty columns in process_order_data system 1...
-2024-12-01 08:26:40,194 - Empty columns in process_order_data system 1:
+2024-12-01 14:00:29,658 - Checking for empty columns in process_order_data system 1...
+2024-12-01 14:00:29,664 - Empty columns in process_order_data system 1:
 Index(['FTRMP', 'ZZPRO_TEXT'], dtype='object')
-2024-12-01 08:26:40,194 - 
+2024-12-01 14:00:29,664 - 
 --------------------------------------------------
 
-2024-12-01 08:26:40,195 - Checking for empty columns in process_order_data system 2...
-2024-12-01 08:26:40,197 - Empty columns in process_order_data system 2:
+2024-12-01 14:00:29,665 - Checking for empty columns in process_order_data system 2...
+2024-12-01 14:00:29,665 - Empty columns in process_order_data system 2:
 Index(['GLTRP', 'GSTRP', 'FTRMS', 'GLTRS', 'GSTRS', 'GSTRI', 'GETRI', 'GLTRI',
        'FTRMI', 'FTRMP', 'DISPO', 'FEVOR', 'PLGRP', 'FHORI', 'finish_date',
        'KDAUF', 'ZZGLTRP_ORIG', 'ZZPRO_TEXT', 'on_time_flag',
        'actual_on_time_deviation', 'order_start_timestamp'],
       dtype='object')
-2024-12-01 08:26:40,197 - 
+2024-12-01 14:00:29,666 - 
 --------------------------------------------------
 
-2024-12-01 08:26:40,197 - Comparing columns and data types for local_material_data...
-2024-12-01 08:26:40,198 - Common columns: {'MATNR', 'SOURCE_SYSTEM_ERP', 'VPRSV', 'BWKEY', 'STPRS', 'global_mtl_id', 'global_material_number', 'primary_key_inter', 'WAERS', 'primary_key_intra', 'no_of_duplicates', 'VERPR', 'mtl_plant_emd', 'BUKRS', 'PEINH', 'WERKS', 'MEINS', 'MANDT', 'BKLAS', 'NAME1'}
-2024-12-01 08:26:40,198 - Columns in local_material_data system 2 but missing in system 1: set()
-2024-12-01 08:26:40,198 - Columns in local_material_data system 1 but missing in system 2: set()
-2024-12-01 08:26:40,199 - All columns in this dataset have the same type.
-2024-12-01 08:26:40,199 - 
+2024-12-01 14:00:29,666 - Comparing columns and data types for local_material_data...
+2024-12-01 14:00:29,666 - Common columns: {'MATNR', 'SOURCE_SYSTEM_ERP', 'VPRSV', 'BWKEY', 'STPRS', 'global_mtl_id', 'global_material_number', 'primary_key_inter', 'WAERS', 'primary_key_intra', 'no_of_duplicates', 'VERPR', 'mtl_plant_emd', 'BUKRS', 'PEINH', 'WERKS', 'MEINS', 'MANDT', 'BKLAS', 'NAME1'}
+2024-12-01 14:00:29,666 - Columns in local_material_data system 2 but missing in system 1: set()
+2024-12-01 14:00:29,666 - Columns in local_material_data system 1 but missing in system 2: set()
+2024-12-01 14:00:29,666 - All columns in this dataset have the same type.
+2024-12-01 14:00:29,667 - 
 --------------------------------------------------
 
-2024-12-01 08:26:40,199 - Comparing columns and data types for process_order_data...
-2024-12-01 08:26:40,199 - Common columns: {'GLTRI', 'MATNR', 'GSTRI', 'FTRMP', 'GSTRP', 'SOURCE_SYSTEM_ERP', 'AUART', 'AUFPL', 'start_date', 'KDPOS', 'GLTRS', 'FEVOR', 'DWERK', 'late_delivery_bucket', 'FTRMS', 'GETRI', 'KDAUF', 'on_time_flag', 'FTRMI', 'OBJNR', 'finish_date', 'order_start_timestamp', 'NTGEW', 'ZZGLTRP_ORIG', 'global_material_number', 'primary_key_inter', 'POSNR', 'GLTRP', 'order_finish_timestamp', 'LTRMI', 'ZZPRO_TEXT', 'primary_key_intra', 'mto_vs_mts_flag', 'PLGRP', 'ERNAM', 'MTART', 'DISPO', 'actual_on_time_deviation', 'ERDAT', 'MEINS', 'MANDT', 'FHORI', 'AUFNR', 'GSTRS'}
-2024-12-01 08:26:40,200 - Columns in process_order_data system 2 but missing in system 1: set()
-2024-12-01 08:26:40,200 - Columns in process_order_data system 1 but missing in system 2: set()
-2024-12-01 08:26:40,200 - All columns in this dataset have the same type.
-2024-12-01 08:26:40,200 - 
+2024-12-01 14:00:29,667 - Comparing columns and data types for process_order_data...
+2024-12-01 14:00:29,667 - Common columns: {'GLTRI', 'MATNR', 'GSTRI', 'FTRMP', 'GSTRP', 'SOURCE_SYSTEM_ERP', 'AUART', 'AUFPL', 'start_date', 'KDPOS', 'GLTRS', 'FEVOR', 'DWERK', 'late_delivery_bucket', 'FTRMS', 'GETRI', 'KDAUF', 'on_time_flag', 'FTRMI', 'OBJNR', 'finish_date', 'order_start_timestamp', 'NTGEW', 'ZZGLTRP_ORIG', 'global_material_number', 'primary_key_inter', 'POSNR', 'GLTRP', 'order_finish_timestamp', 'LTRMI', 'ZZPRO_TEXT', 'primary_key_intra', 'mto_vs_mts_flag', 'PLGRP', 'ERNAM', 'MTART', 'DISPO', 'actual_on_time_deviation', 'ERDAT', 'MEINS', 'MANDT', 'FHORI', 'AUFNR', 'GSTRS'}
+2024-12-01 14:00:29,667 - Columns in process_order_data system 2 but missing in system 1: set()
+2024-12-01 14:00:29,667 - Columns in process_order_data system 1 but missing in system 2: set()
+2024-12-01 14:00:29,667 - All columns in this dataset have the same type.
+2024-12-01 14:00:29,667 - 
+--------------------------------------------------
+
+2024-12-01 14:00:29,668 - Column types for local_material_data system 1:
+2024-12-01 14:00:29,668 - Column 'MANDT': string
+2024-12-01 14:00:29,668 - Column 'BUKRS': string
+2024-12-01 14:00:29,668 - Column 'BWKEY': string
+2024-12-01 14:00:29,668 - Column 'MATNR': string
+2024-12-01 14:00:29,668 - Column 'WERKS': string
+2024-12-01 14:00:29,668 - Column 'SOURCE_SYSTEM_ERP': string
+2024-12-01 14:00:29,669 - Column 'MEINS': string
+2024-12-01 14:00:29,669 - Column 'global_material_number': string
+2024-12-01 14:00:29,669 - Column 'NAME1': string
+2024-12-01 14:00:29,669 - Column 'VPRSV': string
+2024-12-01 14:00:29,669 - Column 'VERPR': double
+2024-12-01 14:00:29,669 - Column 'STPRS': double
+2024-12-01 14:00:29,669 - Column 'PEINH': double
+2024-12-01 14:00:29,669 - Column 'BKLAS': string
+2024-12-01 14:00:29,670 - Column 'WAERS': string
+2024-12-01 14:00:29,670 - Column 'mtl_plant_emd': string
+2024-12-01 14:00:29,670 - Column 'global_mtl_id': string
+2024-12-01 14:00:29,670 - Column 'primary_key_intra': string
+2024-12-01 14:00:29,670 - Column 'primary_key_inter': string
+2024-12-01 14:00:29,670 - Column 'no_of_duplicates': int64
+2024-12-01 14:00:29,670 - 
+--------------------------------------------------
+
+2024-12-01 14:00:29,670 - Column types for local_material_data system 2:
+2024-12-01 14:00:29,671 - Column 'MANDT': string
+2024-12-01 14:00:29,671 - Column 'BUKRS': string
+2024-12-01 14:00:29,671 - Column 'BWKEY': string
+2024-12-01 14:00:29,671 - Column 'MATNR': string
+2024-12-01 14:00:29,671 - Column 'WERKS': string
+2024-12-01 14:00:29,671 - Column 'SOURCE_SYSTEM_ERP': string
+2024-12-01 14:00:29,671 - Column 'MEINS': string
+2024-12-01 14:00:29,672 - Column 'global_material_number': string
+2024-12-01 14:00:29,672 - Column 'NAME1': string
+2024-12-01 14:00:29,672 - Column 'VPRSV': string
+2024-12-01 14:00:29,672 - Column 'VERPR': double
+2024-12-01 14:00:29,672 - Column 'STPRS': double
+2024-12-01 14:00:29,672 - Column 'PEINH': double
+2024-12-01 14:00:29,672 - Column 'BKLAS': string
+2024-12-01 14:00:29,672 - Column 'WAERS': string
+2024-12-01 14:00:29,673 - Column 'mtl_plant_emd': string
+2024-12-01 14:00:29,673 - Column 'global_mtl_id': string
+2024-12-01 14:00:29,673 - Column 'primary_key_intra': string
+2024-12-01 14:00:29,673 - Column 'primary_key_inter': string
+2024-12-01 14:00:29,673 - Column 'no_of_duplicates': int64
+2024-12-01 14:00:29,673 - 
+--------------------------------------------------
+
+2024-12-01 14:00:29,673 - Column types for process_order_data system 1:
+2024-12-01 14:00:29,674 - Column 'MATNR': string
+2024-12-01 14:00:29,674 - Column 'AUFNR': string
+2024-12-01 14:00:29,674 - Column 'SOURCE_SYSTEM_ERP': string
+2024-12-01 14:00:29,675 - Column 'MANDT': string
+2024-12-01 14:00:29,675 - Column 'GLTRP': date32[day]
+2024-12-01 14:00:29,675 - Column 'GSTRP': date32[day]
+2024-12-01 14:00:29,675 - Column 'FTRMS': date32[day]
+2024-12-01 14:00:29,675 - Column 'GLTRS': date32[day]
+2024-12-01 14:00:29,675 - Column 'GSTRS': date32[day]
+2024-12-01 14:00:29,676 - Column 'GSTRI': date32[day]
+2024-12-01 14:00:29,676 - Column 'GETRI': date32[day]
+2024-12-01 14:00:29,676 - Column 'GLTRI': date32[day]
+2024-12-01 14:00:29,676 - Column 'FTRMI': date32[day]
+2024-12-01 14:00:29,676 - Column 'FTRMP': string
+2024-12-01 14:00:29,676 - Column 'DISPO': string
+2024-12-01 14:00:29,677 - Column 'FEVOR': string
+2024-12-01 14:00:29,677 - Column 'PLGRP': string
+2024-12-01 14:00:29,678 - Column 'FHORI': string
+2024-12-01 14:00:29,678 - Column 'AUFPL': string
+2024-12-01 14:00:29,678 - Column 'start_date': date32[day]
+2024-12-01 14:00:29,679 - Column 'finish_date': date32[day]
+2024-12-01 14:00:29,679 - Column 'POSNR': string
+2024-12-01 14:00:29,679 - Column 'DWERK': string
+2024-12-01 14:00:29,679 - Column 'MEINS': string
+2024-12-01 14:00:29,680 - Column 'KDAUF': string
+2024-12-01 14:00:29,680 - Column 'KDPOS': string
+2024-12-01 14:00:29,680 - Column 'LTRMI': date32[day]
+2024-12-01 14:00:29,680 - Column 'OBJNR': string
+2024-12-01 14:00:29,680 - Column 'ERDAT': date32[day]
+2024-12-01 14:00:29,681 - Column 'ERNAM': string
+2024-12-01 14:00:29,681 - Column 'AUART': string
+2024-12-01 14:00:29,681 - Column 'ZZGLTRP_ORIG': date32[day]
+2024-12-01 14:00:29,681 - Column 'ZZPRO_TEXT': string
+2024-12-01 14:00:29,681 - Column 'global_material_number': string
+2024-12-01 14:00:29,681 - Column 'NTGEW': double
+2024-12-01 14:00:29,681 - Column 'MTART': string
+2024-12-01 14:00:29,682 - Column 'primary_key_intra': string
+2024-12-01 14:00:29,682 - Column 'primary_key_inter': string
+2024-12-01 14:00:29,682 - Column 'on_time_flag': int32
+2024-12-01 14:00:29,682 - Column 'actual_on_time_deviation': int32
+2024-12-01 14:00:29,682 - Column 'late_delivery_bucket': string
+2024-12-01 14:00:29,682 - Column 'mto_vs_mts_flag': string
+2024-12-01 14:00:29,682 - Column 'order_finish_timestamp': timestamp[ns]
+2024-12-01 14:00:29,682 - Column 'order_start_timestamp': timestamp[ns]
+2024-12-01 14:00:29,683 - 
+--------------------------------------------------
+
+2024-12-01 14:00:29,683 - Column types for process_order_data system 2:
+2024-12-01 14:00:29,683 - Column 'MATNR': string
+2024-12-01 14:00:29,683 - Column 'AUFNR': string
+2024-12-01 14:00:29,683 - Column 'SOURCE_SYSTEM_ERP': string
+2024-12-01 14:00:29,683 - Column 'MANDT': string
+2024-12-01 14:00:29,684 - Column 'GLTRP': date32[day]
+2024-12-01 14:00:29,684 - Column 'GSTRP': date32[day]
+2024-12-01 14:00:29,685 - Column 'FTRMS': date32[day]
+2024-12-01 14:00:29,685 - Column 'GLTRS': date32[day]
+2024-12-01 14:00:29,686 - Column 'GSTRS': date32[day]
+2024-12-01 14:00:29,686 - Column 'GSTRI': date32[day]
+2024-12-01 14:00:29,686 - Column 'GETRI': date32[day]
+2024-12-01 14:00:29,687 - Column 'GLTRI': date32[day]
+2024-12-01 14:00:29,687 - Column 'FTRMI': date32[day]
+2024-12-01 14:00:29,687 - Column 'FTRMP': string
+2024-12-01 14:00:29,688 - Column 'DISPO': string
+2024-12-01 14:00:29,688 - Column 'FEVOR': string
+2024-12-01 14:00:29,688 - Column 'PLGRP': string
+2024-12-01 14:00:29,688 - Column 'FHORI': string
+2024-12-01 14:00:29,688 - Column 'AUFPL': string
+2024-12-01 14:00:29,688 - Column 'start_date': date32[day]
+2024-12-01 14:00:29,689 - Column 'finish_date': date32[day]
+2024-12-01 14:00:29,689 - Column 'POSNR': string
+2024-12-01 14:00:29,689 - Column 'DWERK': string
+2024-12-01 14:00:29,689 - Column 'MEINS': string
+2024-12-01 14:00:29,690 - Column 'KDAUF': string
+2024-12-01 14:00:29,690 - Column 'KDPOS': string
+2024-12-01 14:00:29,690 - Column 'LTRMI': date32[day]
+2024-12-01 14:00:29,690 - Column 'OBJNR': string
+2024-12-01 14:00:29,691 - Column 'ERDAT': date32[day]
+2024-12-01 14:00:29,691 - Column 'ERNAM': string
+2024-12-01 14:00:29,691 - Column 'AUART': string
+2024-12-01 14:00:29,691 - Column 'ZZGLTRP_ORIG': date32[day]
+2024-12-01 14:00:29,691 - Column 'ZZPRO_TEXT': string
+2024-12-01 14:00:29,691 - Column 'global_material_number': string
+2024-12-01 14:00:29,692 - Column 'NTGEW': double
+2024-12-01 14:00:29,692 - Column 'MTART': string
+2024-12-01 14:00:29,692 - Column 'primary_key_intra': string
+2024-12-01 14:00:29,692 - Column 'primary_key_inter': string
+2024-12-01 14:00:29,692 - Column 'on_time_flag': int32
+2024-12-01 14:00:29,692 - Column 'actual_on_time_deviation': int32
+2024-12-01 14:00:29,693 - Column 'late_delivery_bucket': string
+2024-12-01 14:00:29,693 - Column 'mto_vs_mts_flag': string
+2024-12-01 14:00:29,693 - Column 'order_finish_timestamp': timestamp[ns]
+2024-12-01 14:00:29,693 - Column 'order_start_timestamp': timestamp[ns]
+2024-12-01 14:00:29,693 - 
 --------------------------------------------------
 

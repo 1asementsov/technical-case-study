@@ -44,8 +44,9 @@ And **`tech_case_study.pbix`** file is an example of visualization on data compl
 
 ### Output
 
-1. As an output, there should be 4 folders (2 for each system) with parquet files inside. Some files were partitioned by default, though they can be merged if necessary.
-2. Also, there should be the `output_check.log` file to check both datasets have the **same schema** for **harmonization** across systems.
+As an output, there should be 4 folders (2 for each system) with parquet files inside. Some files were partitioned by default, though they can be merged if necessary.
+
+(Optional) Also, you can run output_check.py to get `output_check.log` file to check both datasets have the **same schema** for **harmonization** across systems.
 
 After we build parquet files, we can use any BI tool to visualize data and find insights in data.
 Here are two examples how it might look like.
@@ -78,6 +79,10 @@ cd technical-case-study
 #### 2. Start the container and run Spark job
 ```bash
 docker-compose up
+```
+##### (Optional): you can build container if needed
+```bash
+docker-compose build
 ```
 
 #### 3. Stop and remove containers (if needed)

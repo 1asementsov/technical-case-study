@@ -3,10 +3,10 @@ import os
 import pyarrow.parquet as pq
 
 # Ensure the folder exists
-os.makedirs('logs', exist_ok=True)
+os.makedirs('output', exist_ok=True)
 
 # Set up logging to file in the 'logs' folder
-logging.basicConfig(filename='output/output_check.log', level=logging.INFO, format='%(asctime)s - %(message)s', filemode='w')
+logging.basicConfig(filename='./data/output/output_check.log', level=logging.INFO, format='%(asctime)s - %(message)s', filemode='w')
 
 # Paths for the Parquet files
 parquet_file_path_local_material_s1 = "output/local_material_data_s1.parquet"
