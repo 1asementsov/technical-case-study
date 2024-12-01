@@ -6,7 +6,8 @@ technical-case-study-solution/env/
 src/__pycache__/
 __MACOSX/
 technical-case-study/
-technical-case-study/technical-case-study-solution/src/merge.py
-technical-case-study/technical-case-study-solution/src/s2_local_material_check.py
-technical-case-study/technical-case-study-solution/src/output
-technical-case-study/technical-case-study-solution/src/data/output
+technical-case-study-solution/src/merge.py
+technical-case-study-solution/src/s2_local_material_check.py
+technical-case-study-solution/src/output
+technical-case-study-solution/src/data/output
+technical-case-study-solution/src/__pycache__
