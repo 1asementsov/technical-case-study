@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  spark:
+    image: tech-case-study  # The image name
+    build: .  # Builds the image from the Dockerfile in the current directory
+    volumes:
+      - ./data:/src/raw_data  # Map the local data directory to /src/raw_data inside the container
+      - ./data/output:/src/output  # Map the local output directory to /src/output inside the container
+    command: spark-submit /src/main.py && spark-submit /src/output_check.py  # Run both scripts
+    environment:
+      - SPARK_HOME=/opt/spark  # Set any necessary environment variables for Spark
+    ports:
+      - "4040:4040"  # Expose Spark UI on port 4040 (optional)
+    restart: always  # Automatically restart the container if it fails (optional)

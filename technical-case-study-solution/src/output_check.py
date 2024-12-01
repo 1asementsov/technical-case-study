@@ -1,4 +1,12 @@
+import logging
+import os
 import pyarrow.parquet as pq
+
+# Ensure the folder exists
+os.makedirs('logs', exist_ok=True)
+
+# Set up logging to file in the 'logs' folder
+logging.basicConfig(filename='output/output_check.log', level=logging.INFO, format='%(asctime)s - %(message)s')
 
 # Paths for the Parquet files
 parquet_file_path_local_material_s1 = "output/local_material_data_s1.parquet"
@@ -33,23 +41,22 @@ types_process_order_s2 = {
     col: table_process_order_s2.column(col).type for col in columns_process_order_s2
 }
 
-
 # Function to compare columns and data types
 def compare_parquet_columns_and_types(
     columns_s1, types_s1, columns_s2, types_s2, dataset_name
 ):
-    print(f"Comparing columns and data types for {dataset_name}...")
+    logging.info(f"Comparing columns and data types for {dataset_name}...")
 
     # Find common columns
     common_columns = set(columns_s1).intersection(set(columns_s2))
     missing_in_s1 = set(columns_s2) - set(columns_s1)
     missing_in_s2 = set(columns_s1) - set(columns_s2)
 
-    print(f"Common columns: {common_columns}")
-    print(
+    logging.info(f"Common columns: {common_columns}")
+    logging.info(
         f"Columns in {dataset_name} system 2 but missing in system 1: {missing_in_s1}"
     )
-    print(
+    logging.info(
         f"Columns in {dataset_name} system 1 but missing in system 2: {missing_in_s2}"
     )
 
@@ -60,64 +67,64 @@ def compare_parquet_columns_and_types(
         type_s2 = types_s2.get(column)
 
         if type_s1 != type_s2:
-            print(
+            logging.info(
                 f"Column '{column}' has different types: System 1 ({type_s1}) vs System 2 ({type_s2})"
             )
             type_mismatch_found = True
 
-    # If no type mismatch was found, print a general message
+    # If no type mismatch was found, log a general message
     if not type_mismatch_found:
-        print("All columns in this dataset have the same type.")
+        logging.info("All columns in this dataset have the same type.")
 
-    print("\n" + "-" * 50 + "\n")
+    logging.info("\n" + "-" * 50 + "\n")
 
 
 # Function to explore data in each dataset
 def explore_data(pandas_df, dataset_name):
-    print(f"Exploring data for {dataset_name}...")
-    print(f"First 5 rows of the dataset {dataset_name}:")
-    print(pandas_df.head())
-    print(f"\nSummary statistics for {dataset_name}:")
-    print(pandas_df.describe())
-    print("\n" + "-" * 50 + "\n")
+    logging.info(f"Exploring data for {dataset_name}...")
+    logging.info(f"First 5 rows of the dataset {dataset_name}:")
+    logging.info(f"{pandas_df.head()}")
+    logging.info(f"\nSummary statistics for {dataset_name}:")
+    logging.info(f"{pandas_df.describe()}")
+    logging.info("\n" + "-" * 50 + "\n")
 
 
 # Function to check for primary key uniqueness
 def check_primary_key_uniqueness(pandas_df, primary_key_columns, dataset_name):
-    print(f"Checking primary key uniqueness for {dataset_name}...")
+    logging.info(f"Checking primary key uniqueness for {dataset_name}...")
     for primary_key in primary_key_columns:
         if pandas_df[primary_key].duplicated().any():
-            print(
-                f"Warning: Primary key '{primary_key}' in {dataset_name} has duplicates."
+            logging.warning(
+                f"Primary key '{primary_key}' in {dataset_name} has duplicates."
             )
         else:
-            print(f"Primary key '{primary_key}' in {dataset_name} is unique.")
-    print("\n" + "-" * 50 + "\n")
+            logging.info(f"Primary key '{primary_key}' in {dataset_name} is unique.")
+    logging.info("\n" + "-" * 50 + "\n")
 
 
 # Function to check for missing values in dataset
 def check_missing_values(pandas_df, dataset_name):
-    print(f"Checking for missing values in {dataset_name}...")
+    logging.info(f"Checking for missing values in {dataset_name}...")
     missing_values = pandas_df.isnull().sum()
     if missing_values.any():
-        print(f"Missing values in {dataset_name}:\n{missing_values}")
+        logging.info(f"Missing values in {dataset_name}:\n{missing_values}")
     else:
-        print(f"No missing values in {dataset_name}.")
-    print("\n" + "-" * 50 + "\n")
+        logging.info(f"No missing values in {dataset_name}.")
+    logging.info("\n" + "-" * 50 + "\n")
 
 
 # Function to check for empty columns
 def check_empty_columns(pandas_df, dataset_name):
-    print(f"Checking for empty columns in {dataset_name}...")
+    logging.info(f"Checking for empty columns in {dataset_name}...")
 
     # Check for empty columns (all NaN)
     empty_columns = pandas_df.columns[pandas_df.isnull().all()]
     if empty_columns.any():
-        print(f"Empty columns in {dataset_name}:\n{empty_columns}")
+        logging.info(f"Empty columns in {dataset_name}:\n{empty_columns}")
     else:
-        print(f"No empty columns in {dataset_name}.")
+        logging.info(f"No empty columns in {dataset_name}.")
 
-    print("\n" + "-" * 50 + "\n")
+    logging.info("\n" + "-" * 50 + "\n")
 
 
 # Explore the data for both systems

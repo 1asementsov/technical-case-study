@@ -1,0 +1,268 @@
+2024-12-01 12:39:11,408 - Exploring data for local_material_data system 1...
+2024-12-01 12:39:11,408 - First 5 rows of the dataset local_material_data system 1:
+2024-12-01 12:39:11,424 -                                                MANDT                                              BUKRS  ...                                  primary_key_inter no_of_duplicates
+0  ad57366865126e55649ecb23ae1d48887544976efea46a...  40510175845988f13f6162ed8526f0b09f73384467fa85...  ...  9b209a8df4da4b8d1324a72922683c465c740844eef330...                1
+1  ad57366865126e55649ecb23ae1d48887544976efea46a...  bd14620394b6083fbf735bbfc55773765de1d750ec053f...  ...  9b209a8df4da4b8d1324a72922683c465c740844eef330...                1
+2  ad57366865126e55649ecb23ae1d48887544976efea46a...  ecd8e4da8db957686847a87370033f9b64fa9348bfd71d...  ...  9b209a8df4da4b8d1324a72922683c465c740844eef330...                1
+3  ad57366865126e55649ecb23ae1d48887544976efea46a...  b746356b9c2afdce96197d490c00d864c54c432d61f49d...  ...  9b209a8df4da4b8d1324a72922683c465c740844eef330...                1
+4  ad57366865126e55649ecb23ae1d48887544976efea46a...  40510175845988f13f6162ed8526f0b09f73384467fa85...  ...  9b209a8df4da4b8d1324a72922683c465c740844eef330...                1
+
+[5 rows x 20 columns]
+2024-12-01 12:39:11,425 - 
+Summary statistics for local_material_data system 1:
+2024-12-01 12:39:11,435 -               VERPR        STPRS        PEINH  no_of_duplicates
+count     61.000000    61.000000    61.000000              61.0
+mean    1578.082066   554.345031   280.763039               1.0
+std     7910.137723  1157.422019   178.923428               0.0
+min        6.691332    18.235695    25.496651               1.0
+25%      113.710829   130.425828   142.653018               1.0
+50%      275.492109   246.605789   294.850026               1.0
+75%      426.879106   386.409952   408.951352               1.0
+max    61654.173075  6914.437676  1071.626347               1.0
+2024-12-01 12:39:11,436 - 
+--------------------------------------------------
+
+2024-12-01 12:39:11,436 - Exploring data for local_material_data system 2...
+2024-12-01 12:39:11,436 - First 5 rows of the dataset local_material_data system 2:
+2024-12-01 12:39:11,451 -                                                MANDT                                              BUKRS  ...                                  primary_key_inter no_of_duplicates
+0  ad57366865126e55649ecb23ae1d48887544976efea46a...  524beeec873cb78924f03e60f2b9a7313873df5881f065...  ...  abe464ff6d208dc29d603390b9992bcccb9b06e57c94eb...                1
+1  ad57366865126e55649ecb23ae1d48887544976efea46a...  524beeec873cb78924f03e60f2b9a7313873df5881f065...  ...  abe464ff6d208dc29d603390b9992bcccb9b06e57c94eb...                1
+2  ad57366865126e55649ecb23ae1d48887544976efea46a...  524beeec873cb78924f03e60f2b9a7313873df5881f065...  ...  abe464ff6d208dc29d603390b9992bcccb9b06e57c94eb...                1
+3  ad57366865126e55649ecb23ae1d48887544976efea46a...  524beeec873cb78924f03e60f2b9a7313873df5881f065...  ...  abe464ff6d208dc29d603390b9992bcccb9b06e57c94eb...                1
+4  ad57366865126e55649ecb23ae1d48887544976efea46a...  524beeec873cb78924f03e60f2b9a7313873df5881f065...  ...  abe464ff6d208dc29d603390b9992bcccb9b06e57c94eb...                1
+
+[5 rows x 20 columns]
+2024-12-01 12:39:11,451 - 
+Summary statistics for local_material_data system 2:
+2024-12-01 12:39:11,463 -              VERPR        STPRS        PEINH  no_of_duplicates
+count    13.000000    13.000000    13.000000              13.0
+mean   1486.898204  2305.693011   514.426735               1.0
+std    1811.139142  2594.808864   394.105429               0.0
+min      70.438155   237.404193   188.362486               1.0
+25%     331.220718   425.479858   228.410703               1.0
+50%     453.713982   572.248676   432.075068               1.0
+75%    2569.720923  4616.200060   538.798559               1.0
+max    4729.775034  7059.489910  1419.453628               1.0
+2024-12-01 12:39:11,463 - 
+--------------------------------------------------
+
+2024-12-01 12:39:11,463 - Exploring data for process_order_data system 1...
+2024-12-01 12:39:11,463 - First 5 rows of the dataset process_order_data system 1:
+2024-12-01 12:39:11,484 -                                                MATNR                                              AUFNR  ... order_finish_timestamp order_start_timestamp
+0  590c5df14b93564b3822eeb4d5b6468ea992f92499c169...  0ff67c3c237554bab57968cae4fe1675588e282fa6ac53...  ...    2013-08-07 18:00:00   2013-07-16 18:00:00
+1  85b82c1df153d3366f650faf1974dd83092a5ff9259814...  a93e22729cd472f2ce4bf258bb6905aa7996a2022dda82...  ...    2013-04-13 18:00:00   2013-05-20 18:00:00
+2  c216f4a709b45177d40da3228690f31f68a0e62fe3d0bc...  11586c8e3a2e237fc5fa9560fe88a3a5e5bfb00ac2c98f...  ...    2013-04-18 18:00:00   2013-09-14 18:00:00
+3  c216f4a709b45177d40da3228690f31f68a0e62fe3d0bc...  e538c1bdea2e4e2c11b646a375728936a0b9987fed4b0c...  ...    2013-05-26 18:00:00   2012-11-29 18:00:00
+4  c2bb3b34c7d0fafdfe81229c0834926066486aff6ffdc7...  b331f53e8629deba698a4fe7144097ed47965ad4312661...  ...    2014-12-23 18:00:00   2015-04-01 18:00:00
+
+[5 rows x 44 columns]
+2024-12-01 12:39:11,484 - 
+Summary statistics for process_order_data system 1:
+2024-12-01 12:39:11,505 -              NTGEW  on_time_flag  actual_on_time_deviation         order_finish_timestamp          order_start_timestamp
+count  4690.000000   4129.000000               4129.000000                           4304                           4303
+mean    334.994069      0.510293                  9.811819  2014-11-19 13:26:41.765799168  2014-11-18 00:45:47.478503168
+min      20.234059      0.000000               -369.000000            2000-01-06 19:00:00            1999-12-25 19:00:00
+25%     164.000550      0.000000                -99.000000            2013-09-20 12:00:00            2013-09-11 06:00:00
+50%     288.295322      1.000000                  3.000000            2015-02-18 18:00:00            2015-03-03 18:00:00
+75%     537.092280      1.000000                112.000000            2016-10-29 00:00:00            2016-10-29 06:00:00
+max     644.504808      1.000000               1997.000000            2020-09-01 19:00:00            2020-09-15 19:00:00
+std     231.010993      0.499955                166.805789                            NaN                            NaN
+2024-12-01 12:39:11,505 - 
+--------------------------------------------------
+
+2024-12-01 12:39:11,505 - Exploring data for process_order_data system 2...
+2024-12-01 12:39:11,505 - First 5 rows of the dataset process_order_data system 2:
+2024-12-01 12:39:11,534 -                                                MATNR                                              AUFNR  ... order_finish_timestamp order_start_timestamp
+0  908d2831d769fc7a24550e080ae2cb7b7ed6fbb4b65938...  fea119ec11d0717fa2981bfefe2e0ab2f3a7639e3a84c0...  ...    2008-06-13 18:00:00                   NaT
+1  e54330537af86b38be9ccc391b60e583c9c69161259c9f...  d4635fa498dd44f2281d9702e18619457715639f0c541e...  ...    2018-07-12 18:00:00                   NaT
+2  774fecb2b770a8c768ed5e18e45ccda9774da972068ade...  d4fde5630509afa433bc0a4bb51424a911986fa534b954...  ...                    NaT                   NaT
+3  9729c4a9e9f0f13453dc97c4298183af7a88b3e890a56d...  b08f260c256e3b7a2635b221e578b472323946e45b95a7...  ...                    NaT                   NaT
+4  b0b99f39c1212ed23f94b59cb05fd0a17aec8801182e71...  9cd05f67e6e56f80c2ea1bcf3e95318d7c444b067328cd...  ...    2018-08-15 18:00:00                   NaT
+
+[5 rows x 44 columns]
+2024-12-01 12:39:11,535 - 
+Summary statistics for process_order_data system 2:
+2024-12-01 12:39:11,547 -               NTGEW  on_time_flag  actual_on_time_deviation order_finish_timestamp order_start_timestamp
+count      7.000000           0.0                       0.0                      5                     0
+mean    6448.235979           NaN                       NaN    2018-05-09 04:00:00                   NaT
+min      198.286301           NaN                       NaN    2008-06-13 18:00:00                   NaT
+25%     2436.219561           NaN                       NaN    2018-07-12 18:00:00                   NaT
+50%     9346.164318           NaN                       NaN    2018-08-15 18:00:00                   NaT
+75%    10016.731608           NaN                       NaN    2021-11-13 19:00:00                   NaT
+max    10687.298897           NaN                       NaN    2024-04-15 19:00:00                   NaT
+std     4679.583445           NaN                       NaN                    NaN                   NaN
+2024-12-01 12:39:11,547 - 
+--------------------------------------------------
+
+2024-12-01 12:39:11,547 - Checking primary key uniqueness for local_material_data system 1...
+2024-12-01 12:39:11,548 - Primary key 'primary_key_intra' in local_material_data system 1 is unique.
+2024-12-01 12:39:11,549 - 
+--------------------------------------------------
+
+2024-12-01 12:39:11,549 - Checking primary key uniqueness for local_material_data system 2...
+2024-12-01 12:39:11,549 - Primary key 'primary_key_intra' in local_material_data system 2 is unique.
+2024-12-01 12:39:11,549 - 
+--------------------------------------------------
+
+2024-12-01 12:39:11,549 - Checking primary key uniqueness for process_order_data system 1...
+2024-12-01 12:39:11,551 - Primary key 'primary_key_inter' in process_order_data system 1 is unique.
+2024-12-01 12:39:11,551 - 
+--------------------------------------------------
+
+2024-12-01 12:39:11,551 - Checking primary key uniqueness for process_order_data system 2...
+2024-12-01 12:39:11,551 - Primary key 'primary_key_inter' in process_order_data system 2 is unique.
+2024-12-01 12:39:11,551 - 
+--------------------------------------------------
+
+2024-12-01 12:39:11,551 - Checking for missing values in local_material_data system 1...
+2024-12-01 12:39:11,552 - No missing values in local_material_data system 1.
+2024-12-01 12:39:11,552 - 
+--------------------------------------------------
+
+2024-12-01 12:39:11,552 - Checking for missing values in local_material_data system 2...
+2024-12-01 12:39:11,553 - No missing values in local_material_data system 2.
+2024-12-01 12:39:11,553 - 
+--------------------------------------------------
+
+2024-12-01 12:39:11,553 - Checking for missing values in process_order_data system 1...
+2024-12-01 12:39:11,561 - Missing values in process_order_data system 1:
+MATNR                          0
+AUFNR                          0
+SOURCE_SYSTEM_ERP              0
+MANDT                          0
+GLTRP                          0
+GSTRP                          0
+FTRMS                          0
+GLTRS                          0
+GSTRS                          0
+GSTRI                        387
+GETRI                        387
+GLTRI                        386
+FTRMI                        227
+FTRMP                       4690
+DISPO                          0
+FEVOR                       3967
+PLGRP                       2326
+FHORI                          0
+AUFPL                          0
+start_date                     0
+finish_date                    0
+POSNR                          0
+DWERK                          0
+MEINS                          0
+KDAUF                       2799
+KDPOS                          0
+LTRMI                        386
+OBJNR                          0
+ERDAT                          0
+ERNAM                          0
+AUART                          0
+ZZGLTRP_ORIG                 340
+ZZPRO_TEXT                  4690
+global_material_number         0
+NTGEW                          0
+MTART                          0
+primary_key_intra              0
+primary_key_inter              0
+on_time_flag                 561
+actual_on_time_deviation     561
+late_delivery_bucket           0
+mto_vs_mts_flag                0
+order_finish_timestamp       386
+order_start_timestamp        387
+dtype: int64
+2024-12-01 12:39:11,562 - 
+--------------------------------------------------
+
+2024-12-01 12:39:11,562 - Checking for missing values in process_order_data system 2...
+2024-12-01 12:39:11,563 - Missing values in process_order_data system 2:
+MATNR                       0
+AUFNR                       0
+SOURCE_SYSTEM_ERP           0
+MANDT                       0
+GLTRP                       7
+GSTRP                       7
+FTRMS                       7
+GLTRS                       7
+GSTRS                       7
+GSTRI                       7
+GETRI                       7
+GLTRI                       7
+FTRMI                       7
+FTRMP                       7
+DISPO                       7
+FEVOR                       7
+PLGRP                       7
+FHORI                       7
+AUFPL                       0
+start_date                  0
+finish_date                 7
+POSNR                       0
+DWERK                       0
+MEINS                       0
+KDAUF                       7
+KDPOS                       0
+LTRMI                       2
+OBJNR                       0
+ERDAT                       0
+ERNAM                       0
+AUART                       0
+ZZGLTRP_ORIG                7
+ZZPRO_TEXT                  7
+global_material_number      0
+NTGEW                       0
+MTART                       0
+primary_key_intra           0
+primary_key_inter           0
+on_time_flag                7
+actual_on_time_deviation    7
+late_delivery_bucket        0
+mto_vs_mts_flag             0
+order_finish_timestamp      2
+order_start_timestamp       7
+dtype: int64
+2024-12-01 12:39:11,563 - 
+--------------------------------------------------
+
+2024-12-01 12:39:11,563 - Checking for empty columns in local_material_data system 1...
+2024-12-01 12:39:11,563 - No empty columns in local_material_data system 1.
+2024-12-01 12:39:11,563 - 
+--------------------------------------------------
+
+2024-12-01 12:39:11,563 - Checking for empty columns in local_material_data system 2...
+2024-12-01 12:39:11,564 - No empty columns in local_material_data system 2.
+2024-12-01 12:39:11,564 - 
+--------------------------------------------------
+
+2024-12-01 12:39:11,564 - Checking for empty columns in process_order_data system 1...
+2024-12-01 12:39:11,572 - Empty columns in process_order_data system 1:
+Index(['FTRMP', 'ZZPRO_TEXT'], dtype='object')
+2024-12-01 12:39:11,572 - 
+--------------------------------------------------
+
+2024-12-01 12:39:11,572 - Checking for empty columns in process_order_data system 2...
+2024-12-01 12:39:11,573 - Empty columns in process_order_data system 2:
+Index(['GLTRP', 'GSTRP', 'FTRMS', 'GLTRS', 'GSTRS', 'GSTRI', 'GETRI', 'GLTRI',
+       'FTRMI', 'FTRMP', 'DISPO', 'FEVOR', 'PLGRP', 'FHORI', 'finish_date',
+       'KDAUF', 'ZZGLTRP_ORIG', 'ZZPRO_TEXT', 'on_time_flag',
+       'actual_on_time_deviation', 'order_start_timestamp'],
+      dtype='object')
+2024-12-01 12:39:11,573 - 
+--------------------------------------------------
+
+2024-12-01 12:39:11,573 - Comparing columns and data types for local_material_data...
+2024-12-01 12:39:11,573 - Common columns: {'STPRS', 'PEINH', 'BKLAS', 'NAME1', 'MEINS', 'WAERS', 'VPRSV', 'BUKRS', 'global_mtl_id', 'SOURCE_SYSTEM_ERP', 'WERKS', 'no_of_duplicates', 'MATNR', 'primary_key_intra', 'VERPR', 'primary_key_inter', 'BWKEY', 'MANDT', 'global_material_number', 'mtl_plant_emd'}
+2024-12-01 12:39:11,573 - Columns in local_material_data system 2 but missing in system 1: set()
+2024-12-01 12:39:11,573 - Columns in local_material_data system 1 but missing in system 2: set()
+2024-12-01 12:39:11,573 - All columns in this dataset have the same type.
+2024-12-01 12:39:11,573 - 
+--------------------------------------------------
+
+2024-12-01 12:39:11,573 - Comparing columns and data types for process_order_data...
+2024-12-01 12:39:11,573 - Common columns: {'order_start_timestamp', 'GSTRP', 'NTGEW', 'LTRMI', 'MEINS', 'actual_on_time_deviation', 'start_date', 'FEVOR', 'POSNR', 'ZZPRO_TEXT', 'GETRI', 'DISPO', 'GLTRI', 'on_time_flag', 'mto_vs_mts_flag', 'AUFPL', 'KDPOS', 'SOURCE_SYSTEM_ERP', 'GLTRS', 'ZZGLTRP_ORIG', 'FTRMI', 'finish_date', 'KDAUF', 'PLGRP', 'MATNR', 'GSTRI', 'DWERK', 'MTART', 'primary_key_intra', 'primary_key_inter', 'late_delivery_bucket', 'ERNAM', 'order_finish_timestamp', 'AUART', 'GSTRS', 'MANDT', 'global_material_number', 'FTRMP', 'OBJNR', 'FTRMS', 'ERDAT', 'GLTRP', 'FHORI', 'AUFNR'}
+2024-12-01 12:39:11,573 - Columns in process_order_data system 2 but missing in system 1: set()
+2024-12-01 12:39:11,574 - Columns in process_order_data system 1 but missing in system 2: set()
+2024-12-01 12:39:11,574 - All columns in this dataset have the same type.
+2024-12-01 12:39:11,574 - 
+--------------------------------------------------
+

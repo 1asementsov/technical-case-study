@@ -49,9 +49,9 @@ def prep_general_material_data(sap_mara, col_mara_global_material_number):
         # Deletion flag (LVORM) is null or empty
         (F.col("LVORM").isNull() | (F.trim(F.col("LVORM")) == ""))
     ).select(
-        "MANDT",  # Client
-        "MATNR",  # Material Number
-        "MEINS",  # Base Unit of Measure
+        "MANDT",
+        "MATNR",
+        "MEINS",
         # Rename the global material number column to a consistent name
         F.col(col_mara_global_material_number).alias("global_material_number"),
     )
@@ -201,13 +201,6 @@ def prep_valuation_area(sap_t001k, drop_duplicate_records=True):
         & F.col("BWKEY").isNotNull()
         & F.col("BUKRS").isNotNull()
     )
-
-    # Select the required columns.
-    # data = data.dropDuplicates(["BWKEY", "BUKRS", "MANDT"]).select(
-    #    "MANDT",
-    #    "BWKEY",
-    #    "BUKRS"
-    # )
 
     # Drop Duplicates if drop_duplicate_records is True.
     if drop_duplicate_records:

@@ -27,5 +27,5 @@ ENV PYSPARK_DRIVER_PYTHON=python3
 RUN chown -R root:root /opt/spark && \
     chmod -R 777 /opt/spark
 
-# Define the default command to run the app using spark-submit
-CMD ["spark-submit", "main.py"]
+# Define the default command to run main.py first, then output_check.py
+CMD ["bash", "-c", "spark-submit main.py && spark-submit output_check.py"]

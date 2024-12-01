@@ -124,7 +124,7 @@ def prep_plant_data_for_material(sap_marc, drop_duplicate_records=True):
             data.groupBy("MATNR", "WERKS").count().filter(F.col("count") > 1)
         )
 
-        # If there are duplicates, drop them and log a message (or handle as needed)
+        # If there are duplicates, drop them and print a message
         if duplicate_check_count.count() > 0:
             print("Duplicates found and removed based on MATNR and WERKS.")
             data = data.dropDuplicates(["MATNR", "WERKS"])
@@ -154,10 +154,10 @@ def prep_plant_and_branches(sap_t001w):
     """
     # ○ Select the required columns.
     data = sap_t001w.select(
-        "MANDT",  # Client
-        "WERKS",  # Plan
-        "BWKEY",  # Valuation Area
-        "NAME1",  # Name of Plant/Branch
+        "MANDT",
+        "WERKS",
+        "BWKEY",
+        "NAME1",
     )
     return data
 
@@ -185,13 +185,6 @@ def prep_valuation_area(sap_t001k, drop_duplicate_records=True):
         & F.col("BWKEY").isNotNull()
         & F.col("BUKRS").isNotNull()
     )
-
-    # Select the required columns.
-    # data = data.dropDuplicates(["BWKEY", "BUKRS", "MANDT"]).select(
-    #    "MANDT",
-    #    "BWKEY",
-    #    "BUKRS"
-    # )
 
     # Drop Duplicates if drop_duplicate_records is True.
     if drop_duplicate_records:

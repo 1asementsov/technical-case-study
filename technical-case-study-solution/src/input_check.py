@@ -1,9 +1,9 @@
-import pyspark
 from pyspark.sql import SparkSession
 
-
 def read_csv_file(file_directory: str):
-    # Initialize Spark session
+    """
+    Initialize Spark session and read csv using spark 
+    """
     spark = SparkSession.builder.appName("technical-case-study-solution").getOrCreate()
 
     df = spark.read.csv(f"{file_directory}", header=True, inferSchema=True)
@@ -11,11 +11,11 @@ def read_csv_file(file_directory: str):
 
 
 def get_column_statistics(df, column_names):
-    """Calculate statistics for specific columns"""
+    """Calculate statistics for specific columns like count, mean, stddev, min, and max"""
     print(f"Statistics for columns {column_names}:")
     column_stats = df.describe(
         column_names
-    ).show()  # This will give count, mean, stddev, min, and max
+    ).show()
     return column_stats
 
 
@@ -136,17 +136,17 @@ def process_local_material_data(columns_to_check=None, num_rows=5):
 
 def process_order_data(columns_to_check=None, num_rows=5):
     """
-    Process order-related data for system 1 and system 2 and compare columns and data types.
-    Optionally, calculate statistics for specific columns and print sample data.
+    Process data on orders for system 1 and system 2 and compare columns and data types.
+    It can also calculate statistics for specific columns and print sample data if needed.
     """
-    # Paths for system 1 (Order-related files)
+    # Paths for system 1 (here it's data on orders)
     system_1_files = {
         "AFKO": "../data/system_1/PRE_AFKO.csv",
         "AFPO": "../data/system_1/PRE_AFPO.csv",
         "AUFK": "../data/system_1/PRE_AUFK.csv",
     }
 
-    # Paths for system 2 (Order-related files)
+    # Paths for system 2 (here it's data on orders)
     system_2_files = {
         "AFKO": "../data/system_2/PRD_AFKO.csv",
         "AFPO": "../data/system_2/PRD_AFPO.csv",
