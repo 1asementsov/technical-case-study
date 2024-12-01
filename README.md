@@ -40,12 +40,18 @@ In the `src/` folder, you will find the solution to this project:
 
 Additionally, the **`technical-case-study.drawio.png`** file provides the data modeling visualization on how the initial files were transformed.
 
+And **`tech_case_study.pbix`** file is an example of visualization on data completed in Power BI
 
 ### Output
 
 1. As an output, there should be 4 folders (2 for each system) with parquet files inside. Some files were partitioned by default, though they can be merged if necessary.
-2. Also, there should be an `output_check.log` file to check both datasets have the **same schema** for **harmonization** across systems.
+2. Also, there should be the `output_check.log` file to check both datasets have the **same schema** for **harmonization** across systems.
 
+After we build parquet files, we can use any BI tool to visualize data and find insights in data.
+Here are two examples how it might look like.
+
+![Local Material Data](/Local_Material_Data.png)
+![Process Order Data](/Process_Order_Data.png)
 
 ## Setup Instructions
 

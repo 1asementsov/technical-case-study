@@ -6,7 +6,7 @@ import pyarrow.parquet as pq
 os.makedirs('logs', exist_ok=True)
 
 # Set up logging to file in the 'logs' folder
-logging.basicConfig(filename='output/output_check.log', level=logging.INFO, format='%(asctime)s - %(message)s')
+logging.basicConfig(filename='output/output_check.log', level=logging.INFO, format='%(asctime)s - %(message)s', filemode='w')
 
 # Paths for the Parquet files
 parquet_file_path_local_material_s1 = "output/local_material_data_s1.parquet"
@@ -126,6 +126,13 @@ def check_empty_columns(pandas_df, dataset_name):
 
     logging.info("\n" + "-" * 50 + "\n")
 
+# Log column types for each dataset
+def log_column_types(dataset_name, column_types):
+    logging.info(f"Column types for {dataset_name}:")
+    for col, col_type in column_types.items():
+        logging.info(f"Column '{col}': {col_type}")
+    logging.info("\n" + "-" * 50 + "\n")    
+
 
 # Explore the data for both systems
 explore_data(pandas_df_s1, "local_material_data system 1")
@@ -170,3 +177,9 @@ compare_parquet_columns_and_types(
     types_process_order_s2,
     "process_order_data",
 )
+
+# Log column types for each dataset
+log_column_types("local_material_data system 1", types_s1)
+log_column_types("local_material_data system 2", types_s2)
+log_column_types("process_order_data system 1", types_process_order_s1)
+log_column_types("process_order_data system 2", types_process_order_s2)
