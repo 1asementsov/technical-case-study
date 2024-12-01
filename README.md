@@ -50,8 +50,9 @@ And **`tech_case_study.pbix`** file is an example of visualization on data compl
 After we build parquet files, we can use any BI tool to visualize data and find insights in data.
 Here are two examples how it might look like.
 
-![Local Material Data](/Local_Material_Data.png)
-![Process Order Data](/Process_Order_Data.png)
+![Local Material Data](/Local_Material_Data.PNG)
+---
+![Process Order Data](/Process_Order_Data.PNG)
 
 ## Setup Instructions
 
