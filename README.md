@@ -94,7 +94,7 @@ Docker Compose simplifies running and managing containers. It allows to define m
 
 ---
 
-**[Additional Improvements That We Can Do](Additional_Improvements.md)**
+**[Additional Improvements That We Can Do](technical-case-study-solution/Additional_Improvements.md)**
 
 ---
 
